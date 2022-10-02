@@ -1,0 +1,19 @@
+dataset:
+  path: ../data/upd_df_MR.txt
+  delimiter: \t
+  fields:
+    pain_level: int
+    file: file
+    start: start
+    stop: stop
+    code: code
+    subject: subj
+  files_to_exclude: []
+  codes_to_exclude: []
+  subjects_to_exclude: []
+cooc:
+  ows: 2.
+  no_pain_level: [0]
+  pain_level: [1, 2]
+  alpha: 0.5
+out_dir: ../output/pain_1_2_no_pain_0_alpha_0.5
